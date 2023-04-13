@@ -57,10 +57,11 @@ $colors: (
   &::after {
     content: "";
     position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 500%;
-    height: 500%;
+    top: 0;
+    left: 0;
+    width: 200vw;
+    height: 200vh;
+    transform: translate(-50%, -50%);
     border-radius: 50%;
     backdrop-filter: blur(50px);
   }
