@@ -10,20 +10,22 @@ I then configured ESLint to detect linting errors and automatically
 fix them on save, as well as Sass for website styling.
 Overall, everything went smoothly.
 
-Side-note:
-I set up my repositories in a folder (call it `workspace`).
-My vite project initially wouldn't run, and I discoveredi
-t was because the repository's parent directory had an empty
-`package.json` file.
-Is this alays an issue, and if so &mdash;
-is there ever a way to tell `vite` not to look beyond the currentdir
-ectyory(going "up" the directory structure)?
-I can see a scenario where we do _not_ want the parent's configurations,
-if any, interfering with our configurations.
+> **Note**
+> 
+> I set up my repositories in a folder (call it `workspace`).
+> My vite project initially wouldn't run, and I discovered
+> it was because the repository's parent directory had an empty
+> `package.json` file.
+> Is this always an issue, and if so &mdash;
+> is there ever a way to tell `vite` not to look beyond the current directory
+> (going "up" the directory structure)?
+>
+> I can see a scenario where we do _not_ want the parent's configurations,
+> if any, interfering with our configurations.
 
 ## What Worked Well
 
-Vite! :lightning:
+Vite! :zap:
 
 ## What Didn't
 
