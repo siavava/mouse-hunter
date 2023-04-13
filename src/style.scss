@@ -36,8 +36,8 @@ $colors: (
 
 #tracker {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: calc(50% - 200px);
+  left: calc(50% - 200px);
   width: 400px;
   height: 400px;
   background: linear-gradient(

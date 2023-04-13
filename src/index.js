@@ -23,9 +23,11 @@ const tick = () => {
 setInterval(tick, 1000);
 
 const body = $('#body');
+// const tracker = $('#tracker');
 const tracker = document.getElementById('tracker');
 
-body.on('mousemove', (event) => {
+// follow mouse pointer with animation
+body.on('pointermove', (event) => {
   const { pageX, pageY } = event;
   tracker.animate({
     top: `${pageY - 200}px`,
