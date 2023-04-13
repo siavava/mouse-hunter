@@ -39,4 +39,10 @@ I don't think that's a good idea.
 
 ## Screenshots
 
+### Base 
+
 ![vite site](assets/vite-image.png)
+
+### Slightly nicer visual design
+
+![nicer-design](assets/nicer-design.png)

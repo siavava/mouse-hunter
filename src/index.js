@@ -21,3 +21,17 @@ const tick = () => {
 };
 
 setInterval(tick, 1000);
+
+const body = $('#body');
+const tracker = document.getElementById('tracker');
+
+body.on('mousemove', (event) => {
+  const { pageX, pageY } = event;
+  tracker.animate({
+    top: `${pageY - 200}px`,
+    left: `${pageX - 200}px`,
+  }, {
+    duration: 3000,
+    fill: 'forwards',
+  }, 'ease-in-out');
+});
