@@ -87,7 +87,7 @@ body.onpointermove = (event) => {
 };
 
 // load data/quotes.json
-$.getJSON('/data/quotes.json', (data) => {
+$.getJSON('data/quotes.json', (data) => {
   const quote = document.getElementById('quote');
   const author = document.getElementById('author');
 
