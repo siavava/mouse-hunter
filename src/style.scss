@@ -1,4 +1,4 @@
-
+@use "colors";
 
 /* import fonts */
 // @import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
@@ -13,10 +13,10 @@ html {
   cursor: none;
 }
 
+$background: colors.color("background");
+$foreground: colors.color("light-foreground");
+
 :root {
-  --background: #070707;
-  --foreground: #ffffff;
-  --transition: all 3s ease-in-out;
   text-size-adjust: 100%;
 }
 
@@ -24,8 +24,8 @@ body, html {
   font-family: 'SF Pro Text', sans-serif;;
   font-weight: 400;
   font-size: clamp(12px, 3vw, 40px);
-  background: var(--background);
-  color: var(--foreground);
+  background: $background;
+  color: $foreground;
   height: 100%;
   width: 100%;
   display: flex;
@@ -69,11 +69,17 @@ $colors: (
   background: linear-gradient(
     to right,
     dodgerblue,
-    crimson,
+    colors.color("ochre"),
     #ffd074,
     magenta,
-    mediumpurple,
+    colors.color("secondary-highlight"),
   );
+  // background: linear-gradient(
+  //   to right,
+  //   colors.color("primary-highlight"),
+  //   colors.color("secondary-highlight"),
+  //   colors.color("ochre")
+  // );
   border-radius: 50%;
   z-index: 1;
   pointer-events: none;
@@ -110,7 +116,7 @@ $colors: (
   height: 250px !important;
   aspect-ratio: 1/1;
   border-radius: 50%;
-  border: 2px solid var(--foreground);
+  border: 2px solid $foreground;
   position: relative;
   display: flex;
   justify-content: center;
@@ -121,7 +127,7 @@ $colors: (
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background: var(--foreground);
+    background: $foreground;
     position: absolute;
     top: 1%;
     left: calc(50% - 5px);
@@ -137,7 +143,7 @@ $colors: (
       font-family: "SF Mono", monospace;
       font-size: 1em;
       font-weight: 500;
-      color: var(--foreground);
+      color: $foreground;
       z-index: 3;
       pointer-events: none;
       animation: show-counter 1s ease-in-out infinite;

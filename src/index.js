@@ -6,6 +6,7 @@
 // imports
 import $ from 'jquery';
 import './style.scss';
+import './colors.scss';
 
 const circle = document.getElementById('ring');
 const clock = document.getElementById('main');
