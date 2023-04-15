@@ -244,7 +244,7 @@ $colors: (
 
 @font-face {
   font-family: 'SF Pro Text';
-  src: url('Fonts/SF-Pro/SF-Pro-Text-Regular.otf');
+  src: url('fonts/SF-Pro/SF-Pro-Text-Regular.otf');
   font-weight: 400;
   font-style: normal;
 }
@@ -253,21 +253,21 @@ $colors: (
 // SF Mono
 @font-face {
   font-family: 'SF Mono';
-  src: url('Fonts/SF-Mono/SFMono-Regular.otf');
+  src: url('fonts/SF-Mono/SFMono-Regular.otf');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'SF Mono';
-  src: url('Fonts/SF-Mono/SFMono-Medium.otf');
+  src: url('fonts/SF-Mono/SFMono-Medium.otf');
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'SF Mono';
-  src: url('Fonts/SF-Mono/SFMono-Bold.otf');
+  src: url('fonts/SF-Mono/SFMono-Bold.otf');
   font-weight: 700;
   font-style: normal;
 }
