@@ -3,12 +3,35 @@
   <head>
     <title> altair::mouse-hunter </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/src/img/favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   </head>
   <body id="body">
+    <div id="cursor"></div>
     <div class="logo"></div>
-    <div id="main">Hey, nice to see you!</div>
-    <div id="tracker" />
+    <!-- make a circular progress bar -->
+    <div class="circular" id="ring">
+      <div id="progress-dot" class="progress-dot"></div>
+      <div id="main" class="main">
+        <span id="minutes" class="counter">00</span><span class="colon"> : </span>  <span id="seconds" class="counter">00</span>
+      </div>
+    </div>
+    <div class="blur">
+    </div>
+    <div id="tracker"></div>
+    <div class="quote-container">
+      <div class="quote">
+        <p class="quote-text" id="quote"> Loading... </p>
+        <p class="author" id="author"> </p>
+        <!-- <div class="author">
+          <svg aria-hidden="true" id="lockup-headline-mask" class="headline lockup-headline-mask visually-hidden">
+            <clipPath id="quote-author-mask">
+              <text dominant-baseline="hanging" text-anchor="middle" x="50%" y="0em" dy="0.125em" id="author"></text>
+            </clipPath>
+          </svg>
+        </div> -->
+      </div>
+    </div>
 		<script type="module" src="/src/index.js"></script>
   </body>
 </html>
