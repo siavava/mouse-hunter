@@ -69,14 +69,6 @@ body.onpointermove = (event) => {
   cursor.style.top = `${pageY}px`;
   cursor.style.left = `${pageX}px`;
 
-  // cursor.animate({
-  //   top: `${pageY}px`,
-  //   left: `${pageX}px`,
-  // }, {
-  //   duration: 10,
-  //   fill: 'forwards',
-  // }, 'ease-in-out');
-
   const elemWidth = blob.offsetWidth;
   const elemHeight = blob.offsetHeight;
   const elemX = pageX - elemWidth / 2;
@@ -104,9 +96,6 @@ $.getJSON('data/quotes.json', (data) => {
     setTimeout(() => {
       quote.innerHTML = currentQuote.quote;
       author.innerHTML = currentQuote.person;
-    }, 1000);
-
-    setTimeout(() => {
       quote.classList.remove('pre-animation');
     }, 1000);
   };
