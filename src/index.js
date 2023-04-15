@@ -64,13 +64,18 @@ body.onpointermove = (event) => {
   const blob = document.getElementById('tracker');
   const cursor = document.getElementById('cursor');
   const { pageX, pageY } = event;
-  cursor.animate({
-    top: `${pageY}px`,
-    left: `${pageX}px`,
-  }, {
-    duration: 100,
-    fill: 'forwards',
-  }, 'ease-in-out');
+
+  // set cursor to current position
+  cursor.style.top = `${pageY}px`;
+  cursor.style.left = `${pageX}px`;
+
+  // cursor.animate({
+  //   top: `${pageY}px`,
+  //   left: `${pageX}px`,
+  // }, {
+  //   duration: 10,
+  //   fill: 'forwards',
+  // }, 'ease-in-out');
 
   const elemWidth = blob.offsetWidth;
   const elemHeight = blob.offsetHeight;
