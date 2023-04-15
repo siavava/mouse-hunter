@@ -1,4 +1,4 @@
-# Mouse Hunter
+# [Mouse Hunter](https://mouse-hunter.altair.fyi)
 
 An Apple-inspired page with a blob that follows your mouse cursor around.  
 It also slide-shows quotes from some of my favorite TV shows.
@@ -9,4 +9,4 @@ It also slide-shows quotes from some of my favorite TV shows.
 2. Vite
 3. Sass
 
-:point_right: [Live Demo](https://mouse-hunter.altair.fyi)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/f218e256-da35-4546-a7d5-2a556883394c/deploy-status)](https://app.netlify.com/sites/luminous-semifreddo-c5cf9e/deploys)
