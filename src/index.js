@@ -63,12 +63,12 @@ const body = document.getElementById('body');
 // follow mouse pointer with animation
 body.onpointermove = (event) => {
   const blob = document.getElementById('tracker');
-  const cursor = document.getElementById('cursor');
+  // const cursor = document.getElementById('cursor');
   const { pageX, pageY } = event;
 
   // set cursor to current position
-  cursor.style.top = `${pageY}px`;
-  cursor.style.left = `${pageX}px`;
+  // cursor.style.top = `${pageY}px`;
+  // cursor.style.left = `${pageX}px`;
 
   const elemWidth = blob.offsetWidth;
   const elemHeight = blob.offsetHeight;
