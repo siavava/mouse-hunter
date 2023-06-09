@@ -1,4 +1,6 @@
-# [Mouse Hunter](https://mouse-hunter.altair.fyi)
+# Can You Feel the Dreadful Ticking of Time?
+
+Deployed URL: [`tictoc.amitt.ai`](https://tictoc.amitt.ai)
 
 An Apple-inspired page with a blob that follows your mouse cursor around.  
 It also slide-shows quotes from some of my favorite TV shows.
