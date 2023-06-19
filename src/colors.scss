@@ -9,32 +9,29 @@ $palette: (
   "ochre": #ff4e20,
   "pastel": #fdfd96,
 
+  "primary-highlight": #EE765C,
 
-  // "primary-highlight": #DC4D4D,
-  "primary-highlight": #1db954,
-  "secondary-highlight": #8982ee,
-  // "primary-highlight": #ff4e20,
+  "one": #ff4e20,
+  "two": #3A594D,
+  "three": #BD8FC0,
+
+  "secondary-highlight": #EE765C,
 
 
-  "primary-highlight-tint": rgba(85, 202, 122, 0.11) ,
-  // "secondary-highlight": rgb(187, 255, 0),
-  // "secondary-highlight": #fdfd96,
-  // "secondary-highlight": #a374ff,
+  "primary-highlight-tint": rgba(85, 202, 122, 0.11),
   
   "background": #121212,
-  // "background": #050505,
   "dark-background": #000000,
   "light-background": #181818,
   "lightest-background": #262626,
   "fancy-background": lighten(#0a192f, 40%),
   "shadow": rgba(#000000, 0.1),
 
-
   "dark-foreground": #434343,
-  // "foreground": #a9a9a9,
-  "foreground": #a9a9a9,
-  "light-foreground": #c1bed0,
-  "lightest-foreground": #ffffff,
+  "foreground": #BD8FC0,
+  "light-foreground": #d9aedc,
+
+  "lightest-foreground": #eecaf0,
 
   "info-background": rgba(5, 95, 249, 0.1),
   "info-foreground": #7aade0,
@@ -51,4 +48,14 @@ $palette: (
 @function color($color-name) {
   $result: map.get($palette, $color-name);
   @return $result;
+}
+
+@function highlight-color($n) {
+  @if $n == '1' {
+    @return color("teal");
+  } @else if $n == '2' {
+    @return color("purple");
+  } @else {
+    @return color("khaki");
+  }
 }
